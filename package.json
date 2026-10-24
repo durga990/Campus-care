@@ -1,0 +1,23 @@
+{
+  "name": "campus-care-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campus Care - Campus Issue Management & Escalation System",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "seed": "npm --prefix backend run seed:demo",
+    "migrate:atlas": "npm --prefix backend run migrate:atlas",
+    "dev:backend": "npm --prefix backend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "node backend/server.js"
+  },
+  "keywords": [
+    "campus-care",
+    "issue-tracker",
+    "mern",
+    "react",
+    "express"
+  ]
+}
